@@ -28,7 +28,7 @@ $(function() {
      $('#yt').css({"visibility":"visible"});
      $('#play').fadeOut(300);
       if(true) {
-     	player.playVideo();
+     	player.play();
 	}
    });
    

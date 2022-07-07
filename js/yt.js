@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	
 	window.player = player;
+	
 });
 
 $(function() {
@@ -26,9 +27,9 @@ $(function() {
    $('#play').click(function() {
      $('#yt').css({"visibility":"visible"});
      $('#play').fadeOut(300);
-      if(playerReady) {
-     player.playVideo();
-	 }
+      if(true) {
+     	player.playVideo();
+	}
    });
    
 });

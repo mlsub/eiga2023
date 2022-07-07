@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>『电影哆啦A梦 大雄与天空乌托邦』中文站</title>
+
+<link rel="canonical" href="https://doraeiga.com/2023/">
+
+<!--usetAgent-->
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#FFFFFF">
+
+<meta name="copyright" content="Copyright&copy; Fujiko Pro, Shogakukan, TV Asahi, Shin-ei Animation and ADK 2023">
+<meta name="Description" content="飞向天空的大冒险。系列第42作『电影哆啦A梦 大雄与天空乌托邦』定于2023年3月上映！">
+<meta name="Keywords" lang="ja" content="电影, 电影哆啦A梦, 哆啦A梦, 藤子·F·不二雄, 堂山卓见, 古泽良太, 藤子创作公司, 大雄与天空乌托邦, 大雄与天空理想乡, 大雄, 水田山葵, 大原惠, 嘉数由美, 木村昴, 关智一">
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/cloud.css">
+
+<script src="js/common.js"></script>
+<link rel="stylesheet" href="css/common.css">
+<script src="js/index.js"></script>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/plyr.css">
+
+</head>
+<body>
+
+<div id="loader"><img src="img/loader.png" width="200" height="200" alt=""/></div>
+
+<!--OP-->
+<div id="cloudEffect"></div>
+<div id="white"></div>
+
+<main>
+<div id="mainVisualWrap"><div id="mainVisual"></div></div>
+<p id="catch"><img src="img/catch_w.png" width="69" height="610" alt="飞向天空的大冒险。"/></p>
+
+<article>
+<h1>
+<img src="img/logo.png" width="1620" height="840" alt="电影哆啦A梦 大雄与天空乌托邦"/>
+<picture>
+<source media="(min-width: 835px)" srcset="img/roadshow_w.png">
+<img src="img/roadshow_g.png" alt="2023年3月">
+</picture>
+</h1>
+
+
+<picture id="billing">
+<source media="(min-width: 835px)" srcset="img/billing_w.png">
+<img src="img/billing_g.png" alt="原作：藤子·F·不二雄　导演：堂山卓见　编剧：古泽良太">
+</picture>
+
+
+
+
+<nav class="pc">
+<ul id="pcMenu">
+<li><a class="fade ctsMove" href="#movieTitle">特报</a></li>
+<li><a class="fade ctsMove" href="#newsTitle">新闻</a></li>
+</ul>
+</nav>
+
+</article>
+
+<!--SPメニュー-->
+<div id="menuSPwrap" class="sp">
+
+<nav id="spMenu" class="close">
+<ul>
+<li><a id="spMenuMovie" href="#movieTitle"><img src="img/spmenu_movie.png" width="1200" height="140" alt="特报"/></a></li>
+<li><a id="spMenuNews" href="#newsTitle"><img src="img/spmenu_news.png" width="1200" height="140" alt="新闻"/></a></li>
+</ul>
+</nav>
+
+<ul class="shareWrap close">
+
+<li><img src="img/share_w.png" width="160" height="160" alt="シェア"/></li>
+
+<li><a href="https://twitter.com/share?text=%E3%80%8E%E6%98%A0%E7%94%BB%E3%83%89%E3%83%A9%E3%81%88%E3%82%82%E3%82%93+%E3%81%AE%E3%81%B3%E5%A4%AA%E3%81%A8%E7%A9%BA%E3%81%AE%E7%90%86%E6%83%B3%E9%83%B7%EF%BC%88%E3%83%A6%E3%83%BC%E3%83%88%E3%83%94%E3%82%A2%EF%BC%89%E3%80%8F%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E3%80%902023%E5%B9%B43%E6%9C%88%E5%85%AC%E9%96%8B%E3%80%91&hashtags=%E6%98%A0%E7%94%BB%E3%83%89%E3%83%A9+&url=https://doraeiga.com/2023/" target="_blank"><img class="fade" src="img/share_tw_w.png" width="160" height="160" title="Twitter" alt="Twitter图标"/></a></li>
+
+<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdoraeiga.com%2F2023%2F" target="_blank"><img class="fade" src="img/share_fb_w.png" width="160" height="160" title="Facebook" alt="Facebook图标"/></a></li>
+
+<li><a href="https://line.me/R/msg/text/?https://doraeiga.com/2023/" target="_blank"><img class="fade" src="img/share_ln_w.png" width="160" height="160" title="LINE" alt="LINE图标"/></a></li>
+
+</ul>
+
+</div>
+
+<div id="menuSPhm" class="close sp">
+<div class="hm"></div>
+<div class="hm"></div>
+</div>
+
+
+</main>
+
+<article id="movie">
+
+<h2 id="movieTitle"><img src="img/ctgry_movie.png" width="560" height="160" alt="特報"/></h2>
+<div class="ytWrap">
+<div id="yt"><video class="play "id="yt1"></video></div>
+<script>
+</script>
+<button class="ytBTN" id="play"></button></div>
+
+</article>
+
+<article id="news">
+
+<h2 id="newsTitle"><img src="img/ctgry_news.png" width="560" height="160" alt="新闻"/></h2>
+
+<section>
+<h3>『电影哆啦A梦 大雄的天空<ruby>乌托邦<rp></rp></ruby>』定于2023年3月上映！<br>
+导演堂山卓见、编剧古泽良太首次参与哆啦系列电影</h3>
+<p class="date">2022.7.6</p>
+<p class="bodyTXT">系列电影第42作『电影哆啦A梦 大雄与天空<ruby>乌托邦<rp>（</rp><rt></rt><rp>）</rp></ruby>』，定于2023年3月上映！<br>
+<br>
+担任本作导演的是曾参与过TV版『哆啦A梦』多个作品的堂山卓见！编剧则由曾一首打造『ALWAYS 三丁目的夕阳』系列、『Legal High』系列、『行骗天下JP』系列等人气剧集著名编剧古泽良太担纲。此次是二位首次参加电影哆啦A梦系列的创作。<br>
+<br>
+2023年春，以无垠天空为舞台的S（有一点）・F（不可思议）大冒险，敬请期待！</p>
+
+<div class="newsMoveWrap">
+<h4>堂山卓见寄语</h4>
+<p class="bodyTXT">
+我出生于1980年，正好也是电影哆啦A梦第一作「大雄的恐龙」上映的那一年。能够参与到这部拥有悠久历史的作品当中，我感到很荣幸。说实话，突然听到要让我来导演的消息，在欢喜与感激之前，第一感觉是被吓了一跳。<br>
+这次的故事将舞台设置在天空之中。无论哪个时代，人们都对天空充满憧憬。哆啦A梦有很多可以让我们“在天空中自由翱翔”的道具，即便是在今天这个可以乘坐各种交通工具在天空飞翔的时代，那由一个个秘密道具积累而来的恢弘梦想也还是非常有魅力。<br>
+借由这样的秘密道具，我和曾写下众多口碑佳作的古泽良太先生一起创作了这部影片。我们希望能把它拍成一部让大家能在观后带着幸福的心情仰望天空的优秀作品。</p>
+</div>
+
+<div class="newsMoveWrap">
+<h4>古泽良太寄语</h4>
+<p class="bodyTXT">
+和住在周围的朋友们一起骑上自行车，决定方向后便一往无前，在陌生的街角迎接日落，感到有些害怕时再磕磕绊绊地回家。我曾经经常这般玩耍。这或许就是所谓「冒险」吧。<br>
+起初听说要让我做编剧，因为实在太多顾虑我本打算拒绝，而那时在我脑中浮现出来久久不曾退去的，便是少年时的那种种景象。<br>
+毫无疑问，那些景象来自大魔境、海底鬼岩城、魔界大冒险等一部部名作带来的兴奋与激动，也来自我对大雄和伙伴们的冒险的羡慕。<br>
+藤子·F·不二雄老师当之无愧是第一位让我对创作者充满向往的前辈。<br>
+哆啦A梦是这位旷世奇才所留下来的伟大瑰宝。能够追随守护这块瑰宝的无数创作者参与到这部作品，是我无上的荣耀。<br>
+于是，我决定再次走上冒险之旅，为了当时的我和今天的孩子们，拼尽全力创作起了剧本。<br>
+如果大家也能和大雄、哆啦A梦他们一起，去到这场飞向天空的大冒险，并从中体会到那份兴奋与激动之情，我会非常开心。</p>
+</div>
+
+</section>
+
+</article>
+
+<footer>
+
+<section id="official">
+
+<ul id="officialSNS">
+<li><img src="img/account.png" width="400" height="140" alt="OFFICIAL ACCOUNT"/></li>
+<li><a href="https://twitter.com/doraemonChannel" target="_blank"><img class="fade" src="img/icon_tw.png" width="140" height="140" title="Twitter" alt="Twitter图标"/></a></li>
+<li><a href="https://www.instagram.com/dorachan_official/" target="_blank"><img class="fade" src="img/icon_in.png" width="140" height="140" title="Instagram" alt="Instagram图标"/></a></li>
+<li><a href="https://weixin.qq.com/r/6i0PCiDEc_gPKGRpb3hu" target="_blank"><img class="fade" src="img/icon_wc.png" width="140" height="140" title="公众号" alt="公众号图标"/></a></li>
+<li><a href="https://weibo.com/u/3295781667" target="_blank"><img class="fade" src="img/icon_wb.png" width="140" height="140" title="微博" alt="微博图标"/></a></li>
+<li><a href="https://m.acfun.cn/upPage/19665332" target="_blank"><img class="fade" src="img/icon_af.png" width="140" height="140" title="Acfun" alt="icon_af图标"/></a></li>
+</ul>
+
+</section>
+
+<p>发行／东宝　©Fujiko Pro, Shogakukan, TV Asahi, Shin-ei Animation and ADK 2023</p>
+<p>中文汉化制作：<a href="https://mlsub.net" target="_blank">梦蓝字幕组</a> / FFFfan</p>
+
+</footer>
+
+<script src="js/player.js"></script>
+<script src="js/yt.js"></script>
+
+</body>
+</html>

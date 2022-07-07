@@ -1,0 +1,188 @@
+#white,#white2{
+  z-index: 10;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 120vw;
+  height: 120vh;
+  background: #fff;
+}
+#cloudEffect {
+  z-index: 10;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 120vw;
+  height: 120vh;
+  animation: cloudAnime 1.6s ease-out 1;
+}
+#opCatch{
+display: block;
+position: fixed;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+margin: auto;
+height: 20vh;
+width: auto;
+z-index: 10;
+opacity: 0;
+}
+@keyframes cloudAnime {
+  0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+#cloudEffect img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  transform-origin: center;
+}
+#cloudEffect img:nth-of-type(3n) {
+  animation: scale_anime1 1.6s ease-out infinite;
+}
+#cloudEffect img:nth-of-type(3n+1) {
+  animation: scale_anime2 1.6s ease-out infinite;
+}
+#cloudEffect img:nth-of-type(3n+2) {
+  animation: scale_anime3 1.6s ease-out infinite;
+}
+
+@keyframes scale_anime1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .3;
+    transform: scale(0.1) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(4) rotate(30deg);
+  }
+}
+
+@keyframes scale_anime2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .3;
+    transform: scale(0.1) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(5) rotate(-30deg);
+  }
+}
+
+@keyframes scale_anime3 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .3;
+    transform: scale(0.1) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(6) rotate(-30deg);
+  }
+}
+
+
+/*PC*/
+@media screen and (min-width:835px){
+
+@keyframes scale_anime1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .3;
+    transform: scale(0.5) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.5) rotate(10deg);
+  }
+}
+
+@keyframes scale_anime2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .3;
+    transform: scale(0.5) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.5) rotate(-20deg);
+  }
+}
+
+@keyframes scale_anime3 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .3;
+    transform: scale(0.5) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.0) rotate(-20deg);
+  }
+}
+
+}

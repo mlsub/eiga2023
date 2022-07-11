@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const source = 'https://api.mlsub.net/PV/?get=doramovie2023PV';
 	const video = document.querySelector('video');
 	
-	const player = new Plyr(video, {tooltips: {controls: true, seek: true, autoplay: true}});
+	const player = new Plyr(video, {fullscreen: {enabled: true, fallback: true, iosNative: true, container: null }},{tooltips: {controls: false, seek: true, autoplay: true}});
 
 	video.src = source;
 
